@@ -1,6 +1,7 @@
 import filefinder as f
 import searchbot as s
 import filemodifier as m
+from pathlib import Path
 
 if __name__ == "__main__":
 
@@ -30,7 +31,7 @@ if __name__ == "__main__":
     then select the Young Sheldon directory.
     It will make the program run faster.
     '''
-    dir = 'C:/Users/91883/Downloads/Tv-Series/Young Sheldon'
+    dir = Path('C:/Users/91883/Downloads/Tv-Series/Young Sheldon')
 
     '''
     If your files are not present in organised fashion, then
@@ -41,7 +42,7 @@ if __name__ == "__main__":
     You need not require to make Season directory separately as it will create it
     automatically and move the corresponding file of that season in that newly created folder.
     '''
-    changeDir = '' 
+    changeDir = Path('') 
 
     #find the files in given directory
     f.fileFinder(series_name, dir)
